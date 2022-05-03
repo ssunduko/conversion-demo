@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= title %></title>
+
+  <% /* Place any styles in the page in this section. */ %>
+  <%- style %>
+  <!-- Start of Salesmsg Embed Code -->
+  <script type="text/javascript">
+    window.salesmsgSettingsWidget = {
+  	api_url: "https://app.salesmessage.com",
+  	uuid: "37987539-d97a-43e2-960d-d2dd56abe9ba",
+  };
+  </script>
+  <script type="text/javascript" src="https://d20ufhxg3m5wej.cloudfront.net/js/chat.js"></script>
+  <!-- End of Salesmsg Embed Code -->
+</head>
+<body>
+  <header>
+    <% /*
+    Define an required placeholder for the header.
+    If a page doesn't define a header, there will be an error when rendering.
+    */ %>
+    <%- header %>
+  </header>
+
+  <%- body %>
+
+  <footer>
+    <% /*
+    Define an optional placeholder for the footer.
+    If a page doesn't define a footer, this section will simply be empty.
+    */ %>
+    <%- defineContent('footer') %>
+  </footer>
+
+  <% /* Place any scripts contained in views at the end of the page. */ %>
+  <%- script %>
+</body>
+</html>
+
