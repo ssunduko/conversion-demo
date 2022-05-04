@@ -39,6 +39,7 @@ app.get('/other', function(req, res) {
   res.render('other-view', {
     // additional locals, a custom layout, or other options can be defined here
   });
+});
 
 var port = 8080;
 app.listen(port, function() {
