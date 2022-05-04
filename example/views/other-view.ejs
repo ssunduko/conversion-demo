@@ -1,34 +1,7 @@
-<%- contentFor('header') %>
 <h3 class="page-title"><%= _locals.title %></h3>
-
-<%- contentFor('footer') %>
-<h3>This is the footer</h3>
-
-<% /*
-Content for the `body` section should either be the first thing defined
-in the view, or it has to be declared just like any other section.
-*/ %>
-<%- contentFor('body') %>
-
-This is part of the body.
-
-<% /*
-When style extraction is enabled, any custom styles that a page defines, will
-be extracted out of the content and made available in the specific placeholder.
-In our example, even though we're defining a <style> within the body, this will
-be placed, according to our layout, inside of the <head> element.
-<link> blocks to load external stylesheets are also extracted when the option
-is enabled.
-*/ %>
-
 <style>
   .page-message { color: red }
 </style>
-
-<% /*
-Like stylesheets, scripts can also be extracted.
-This script block will end up at the end of the HTML document.
-*/ %>
 <script>
   // Script content!
 </script>

@@ -13,8 +13,8 @@ app.use(expressLayouts);
 
 app.get('/', function(req, res) {
   res.locals = {
-    title: 'This is a first view',
-    message: 'This is a first message'
+    title: 'Landing Page',
+    message: 'Just landed'
   };
   res.render('view', {
     // additional locals, a custom layout, or other options can be defined here
@@ -23,8 +23,8 @@ app.get('/', function(req, res) {
 
 app.get('/another', function(req, res) {
   res.locals = {
-    title: 'This is a second view',
-    message: 'This is a second message'
+    title: 'Second Page',
+    message: 'Almost there'
   };
   res.render('another-view', {
     // additional locals, a custom layout, or other options can be defined here
@@ -33,8 +33,8 @@ app.get('/another', function(req, res) {
 
 app.get('/other', function(req, res) {
   res.locals = {
-    title: 'This is a third view',
-    message: 'This is a third message'
+    title: 'Conversion Page',
+    message: 'This is a conversion message'
   };
   res.render('other-view', {
     // additional locals, a custom layout, or other options can be defined here
