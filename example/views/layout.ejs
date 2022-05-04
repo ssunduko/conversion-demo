@@ -4,21 +4,22 @@
   <meta charset="UTF-8">
   <title><%= title %></title>
   <%- style %>
+  <!-- Start of Salesmsg Embed Code -->
+  <script type="text/javascript">
+    window.salesmsgSettingsWidget = {
+  	api_url: "https://qa.salesmessage.com",
+  	uuid: "011cfadf-8ac7-4a84-aebe-c0a6f92546de",
+  };
+  </script>
+  <script type="text/javascript" src="https://d37rfzzzole5ut.cloudfront.net/js/chat.js"></script>
+  <!-- End of Salesmsg Embed Code -->
 </head>
 <body>
-  <header>
-  </header>
   <%- body %>
   <footer>
     <%- defineContent('footer') %>
   </footer>
   <%- script %>
-</head>
-<body>
-  <header>
-  </header>
-  <footer>
-  </footer>
 </body>
 </html>
 
